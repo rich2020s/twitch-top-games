@@ -1,0 +1,138 @@
+body {
+  background: black;
+
+}
+.nav{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Black Ops One', cursive;
+}
+.nav__title{
+  text-align: center;
+  color: white;
+  text-shadow: 0 0 0.4em #a06cd5, 0 0 0.4em #a06cd5;
+  font-weight: bold;
+  font-size: 60px;
+}
+.nav__links{
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0 5px;
+  text-align: center;
+  font-size: 14px;
+  color: white;
+}
+.nav__links li{
+  margin: 0 auto;
+}
+
+.nav__links--games{
+  width: 100%;
+  overflow: hidden;
+  word-break: break-word;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 3px;
+  font-size: 16px;
+}
+.active {
+   background: #772ce8;
+  /*background: white;*/
+   color: white; 
+  /*color: #666;*/
+}
+.nav__links--games:hover{
+  background: #772ce8;
+  color: white;
+  transition: all .3s;
+  cursor: pointer;
+  }
+.content__title{
+  margin-bottom: 20px;
+  text-align: center;
+}
+.content__title h2{
+  margin: 10px 0;
+  margin-top: 40px;
+}
+.streams{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.stream {
+  max-width: 100%;
+  margin: 0 20px;
+  margin-top: 20px;
+  /* background: #666; */
+  background: transparent;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.stream:hover{
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+.stream__preview{
+  height: auto;
+}
+.stream__preview img {
+  height: auto;
+  max-width: 100%;
+}
+.stream__info{
+  display: flex;
+}
+.stream__logo{
+  display: block;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.stream__link{
+  text-decoration: none;
+}
+.stream__status,.stream__name{
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  max-width: 230px;
+  padding-left: 3px; 
+}
+.stream__status{
+  margin: 0px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 14px;
+ 
+}
+.stream__name{
+  font-size: 12px;
+  margin-left: 10px;
+}
+.loadingBtn{
+  display: block;
+  width: 100px;
+  height: 40px;
+  background: white;
+  color: #772ce8;
+  margin: 15px auto;
+  border: none;
+  border-radius: 15px;
+}
+.loadingBtn:hover {
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+
+@media(min-width: 768px){
+  .nav__links{
+    flex-direction:  row;
+  }
+}

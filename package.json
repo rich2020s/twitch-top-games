@@ -1,0 +1,25 @@
+{
+  "name": "twitch-top-games",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "build": "webpack --mode=production",
+    "serve": "http-server ./public --cors"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.16.7",
+    "babel-loader": "^8.2.3",
+    "dotenv": "^13.0.0",
+    "dotenv-webpack": "^7.0.3",
+    "http-server": "^14.1.0",
+    "webpack": "^5.66.0",
+    "webpack-cli": "^4.9.1"
+  },
+  "dependencies": {
+    "css-loader": "^6.5.1",
+    "style-loader": "^3.3.1"
+  }
+}
