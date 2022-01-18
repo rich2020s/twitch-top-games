@@ -38,7 +38,6 @@ function topGames() {
 function getLiveStreams(game) {
   return fetch(`https://api.twitch.tv/kraken/streams/?game=${game}&limit=20&offset=${offset}`, {
     headers: {
-      /* eslint-disable */
       'Accept': 'application/vnd.twitchtv.v5+json', 
       'Client-ID': '0tv1kk5m6dndqvi2vbywana4l5hpjs'
     }
